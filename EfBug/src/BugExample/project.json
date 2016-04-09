@@ -1,0 +1,46 @@
+﻿{
+  "webroot": "wwwroot",
+  "compilationOptions": {
+    "emitEntryPoint": true,
+    "preserveCompilationContext": true
+  },
+  "dependencies": {
+    "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-rc3-*",
+    "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.0.0-rc3-*"
+  },
+  "commands": {
+    "web": "BugExample"
+  },
+  "tools": {
+    "dotnet-publish-iis": "1.0.0-*"
+  },
+  "frameworks": {
+    "net451": {
+      "frameworkAssemblies": {
+        "System.Runtime": "4.0.10.0",
+        "System.ComponentModel": "4.0.0.0"
+      }
+    },
+    "netstandardapp1.5": {
+      "dependencies": {
+        "NETStandard.Library": "1.5.0-*"
+      },
+      "imports": [
+        "dnxcore50",
+        "portable-net451+win8"
+      ]
+    }
+  },
+  "exclude": [
+    "wwwroot",
+    "node_modules",
+    "bower_components"
+  ],
+  "publishExclude": [
+    "node_modules",
+    "bower_components",
+    "**.xproj",
+    "**.user",
+    "**.vspscc"
+  ]
+}
